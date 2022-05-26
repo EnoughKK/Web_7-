@@ -13,6 +13,7 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
+    --color-light-pink: #ff9f9f;
   
     /* Font size */
     --font-large: 48px;
@@ -72,12 +73,56 @@
   #navbar {
       display: flex;
       justify-content: space-between;
-      background-color: var(--color-pink);
+      background-color: var(--color-light-pink);
       align-items: center;
-      padding: 16px;
+      padding: 8px;
   }
 
   .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+}
+
+/* Home */
+#home {
+  background: url('imgs/home-background.png') center/cover no-repeat;
+  padding: 60px;
+  text-align: center;
+}
+
+.home__title{
+  color: var(--color-white);
+  padding: 30px;
+}
+
+.home__searchbox{
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  border: 1px solid #51e3d4;
+  background-color: var(--color-white);
+  width: 280px;
+}
+
+.search__text{
+  padding: 0;
+  width: 240px;
+  border: none;
+  outline: none;
+  float: left;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.search__btn{
+  color: #51e3d4;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
 }

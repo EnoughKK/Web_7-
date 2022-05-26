@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainpageStyle.css">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -19,16 +19,52 @@
         <div class="navbar__logo">
             <i class="fa-solid fa-utensils"></i>
             <a href="#">오늘 뭐먹지</a>
-        </div>        
+        </div>
     </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h1 class="home__title">Headline</h1>
+        <div class="home__searchbox">
+            <input class="search__text" type="text" name="" placeholer="Type to search">
+            <a href="#" class="search__btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </section>
 
     <!-- Selection -->
     <section id="selection">
-        <div class="theme__type"></div>
-        <div class="theme__weather"></div>
-        <div class="theme__dongbeak"></div>
-        <div class="theme__solo"></div>
-        <div class="theme__Muslim"></div>
+        <div class="selection__theme">
+            <button class="button__theme" type="button">
+                <h1>테마</h1>
+            </button>
+        </div>
+        <div class="selection__weather">
+            <button class="button__weather" type="button">
+                <h1>날씨</h1>
+            </button>
+        </div>
+        <div class="selection__solo">
+            <button class="button__solo" type="button">
+                <h1>혼밥</h1>
+            </button>
+        </div>
+        <div class="selection__kfood">
+            <button class="button__kfood" type="button">
+                <h1>한국음식소개</h1>
+            </button>
+        </div>
+        <div class="selection__muslim">
+            <button class="button__muslim" type="button">
+                <h1>무슬림</h1>
+            </button>
+        </div>
+        <div class="selection__random">
+            <button class="button__random" type="button">
+                <h1>랜덤</h1>
+            </button>
+        </div>
     </section>
 </body>
 </html>
