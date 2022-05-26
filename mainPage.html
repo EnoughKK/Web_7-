@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mainpageStyle.css">
-    <script src="main.js" defer></script>
+    <script src="mainPage.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
             <i class="fa-solid fa-utensils"></i>
-            <a href="#">오늘 뭐먹지</a>
+            <a href="mainPage.html">오늘 뭐먹지</a>
         </div>
     </nav>
 
@@ -35,36 +35,25 @@
 
     <!-- Selection -->
     <section id="selection">
-        <div class="selection__theme">
-            <button class="button__theme" type="button">
-                <h1>테마</h1>
-            </button>
-        </div>
-        <div class="selection__weather">
-            <button class="button__weather" type="button">
-                <h1>날씨</h1>
-            </button>
-        </div>
-        <div class="selection__solo">
-            <button class="button__solo" type="button">
-                <h1>혼밥</h1>
-            </button>
-        </div>
-        <div class="selection__kfood">
-            <button class="button__kfood" type="button">
-                <h1>한국음식소개</h1>
-            </button>
-        </div>
-        <div class="selection__muslim">
-            <button class="button__muslim" type="button">
-                <h1>무슬림</h1>
-            </button>
-        </div>
-        <div class="selection__random">
-            <button class="button__random" type="button">
-                <h1>랜덤</h1>
-            </button>
-        </div>
+        <button class="selection__button" type="button" onclick="movetheme()"  style="background-image: url('imgs/theme.jpg')">
+            테마
+        </button>
+        <button class="selection__button" type="button" style="background-image: url('imgs/weather.jpg')">
+            <!-- <img src="imgs/weather.jpg" alt="날씨" style="max-width: 100%; height: auto;"> -->
+            날씨
+        </button>
+        <button class="selection__button" type="button" style="background-image: url('imgs/solo.jpg')">
+            혼밥
+        </button>
+        <button class="selection__button" type="button" style="background-image: url('imgs/kfood.jpg')">
+            한국음식소개
+        </button>
+        <button class="selection__button" type="button" style="background-image: url('imgs/muslim.jpg')">
+            무슬림
+        </button>
+        <button class="selection__button" type="button">
+            랜덤
+        </button>
     </section>
 </body>
 </html>
