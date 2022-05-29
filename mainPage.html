@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mainpageStyle.css">
+    <link rel="stylesheet" href="mainpage.css">
     <script src="mainPage.js" defer></script>
 </head>
 <body>
@@ -26,33 +26,34 @@
     <section id="home">
         <h1 class="home__title">Headline</h1>
         <div class="home__searchbox">
-            <input class="search__text" type="text" name="" placeholer="Type to search">
-            <a href="#" class="search__btn">
-                <i class="fas fa-search"></i>
-            </a>
+            <form action="" method="Get">
+                <input class="search__text" type="text" name="" placeholer="Type to search">
+                <a href="#" class="search__btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </form>
         </div>
     </section>
 
     <!-- Selection -->
     <section id="selection">
-        <button class="selection__button" type="button" onclick="movetheme()"  style="background-image: url('imgs/theme.jpg')">
-            테마
+        <button class="selection__button" type="button" onclick="movetheme()" style="background-image: url('imgs/theme.jpg')">
+            <h2 class="selection__title">테마</h2>
         </button>
         <button class="selection__button" type="button" style="background-image: url('imgs/weather.jpg')">
-            <!-- <img src="imgs/weather.jpg" alt="날씨" style="max-width: 100%; height: auto;"> -->
-            날씨
+            <h2 class="selection__title">날씨</h2>
         </button>
         <button class="selection__button" type="button" style="background-image: url('imgs/solo.jpg')">
-            혼밥
+            <h2 class="selection__title">혼밥</h2>
         </button>
         <button class="selection__button" type="button" style="background-image: url('imgs/kfood.jpg')">
-            한국음식소개
+            <h2 class="selection__title">한국음식소개</h2>
         </button>
         <button class="selection__button" type="button" style="background-image: url('imgs/muslim.jpg')">
-            무슬림
+            <h2 class="selection__title">무슬림</h2>
         </button>
         <button class="selection__button" type="button">
-            랜덤
+            <h2 class="selection__title">랜덤</h2>
         </button>
     </section>
 </body>

@@ -75,7 +75,7 @@
       justify-content: space-between;
       background-color: var(--color-light-pink);
       align-items: center;
-      padding: 8px;
+      padding: 10px;
   }
 
   .navbar__logo {
@@ -143,5 +143,11 @@
   margin: 40px 30px;
   background-color: var(--color-pink);
   background-size: 100% auto;
-  border: var(--color-white);
+  border: none;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.selection__title{
+  color: var(--color-white);
+  padding: 30px;
 }
